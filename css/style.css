@@ -237,7 +237,7 @@ header nav ul li {
   line-height: 1.3rem;
 }
 
-#main #services, #main #projects {
+#main .services, #main #projects {
   background-color: #2e2e2e;
   padding: 1.5rem 0 9rem 0;
   width: 100%;
@@ -245,12 +245,12 @@ header nav ul li {
   color: #f2f2f2;
 }
 
-#main #services h1, #main #projects h1 {
+#main .services h1, #main #projects h1 {
   color: #f2f2f2;
   margin-top: 1rem;
 }
 
-#main #services .wrapper, #main #projects .wrapper {
+#main .services .wrapper, #main #projects .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +262,7 @@ header nav ul li {
           align-items: center;
 }
 
-#main #services .wrapper .service, #main #projects .wrapper .service {
+#main .services .wrapper .service, #main #projects .wrapper .service {
   border-radius: 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,25 +286,25 @@ header nav ul li {
   transition: .5s ease;
 }
 
-#main #services .wrapper .service:hover, #main #projects .wrapper .service:hover {
+#main .services .wrapper .service:hover, #main #projects .wrapper .service:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 1px 1px 27px #f2f2f2;
           box-shadow: 1px 1px 27px #f2f2f2;
 }
 
-#main #services .wrapper .service img, #main #projects .wrapper .service img {
+#main .services .wrapper .service img, #main #projects .wrapper .service img {
   margin: 2rem;
   width: 30%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-#main #services .wrapper .service #db, #main #projects .wrapper .service #db {
+#main .services .wrapper .service #db, #main #projects .wrapper .service #db {
   width: 22%;
 }
 
-#main #services .wrapper .service p, #main #projects .wrapper .service p {
+#main .services .wrapper .service p, #main #projects .wrapper .service p {
   margin: 20px 0;
   text-align: center;
 }

@@ -194,7 +194,7 @@ header{
             }
         }
     }
-    #services{
+    .services{
         background-color: $crna;
         padding: 1.5rem 0 9rem 0;
         width: 100%;
@@ -290,7 +290,7 @@ header{
             }
         }
         #projects{
-            @extend #services;
+            @extend .services;
             padding-bottom:  5.6rem ;
             .glavni-naslovi{
                 margin-bottom: 3rem;
