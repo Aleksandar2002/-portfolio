@@ -507,11 +507,15 @@ footer{
     background-color: $crna;
     color:$bela;
     @include tranzicija();
+    transition-duration:.3s ;
+    &:hover{
+        color: $plava;  
+    }
     }
 }
 ::-webkit-scrollbar {
     width: 11px;
-    
+
 }
 ::-webkit-scrollbar-track {
     box-shadow:inset 0px 0px 4px $siva; 
