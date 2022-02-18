@@ -25,7 +25,7 @@ $bela:#f2f2f2;
     flex-direction: column;
 }
 @mixin tranzicija {
-    transition: .5s ease;
+    transition: all  .5s ease;
 }
 @mixin background($url1) {
             background-image: url($url1);
@@ -378,12 +378,134 @@ header{
                 }
             }
         }
+        #contact{
+            margin: 1.2rem 0 4rem 0;
+            .glavni-naslovi{
+                margin-bottom: 4rem;
+            }
+            .wrapper{
+                @include flexbox();
+                align-items: flex-start;
+                #contact-form{
+                    @include flex-col();
+                    padding:3rem 1rem;
+                    box-shadow: 0 0 5px $crna;
+                    @include border-rad(.5rem);
+                    input , textarea{
+                        width: 20rem;
+                        margin: .8rem .5rem ;
+                        padding: 0.9rem 0.9rem 0.3rem 0.9rem;
+                        color: $siva;
+                        outline: none;
+                        background-color: $bela;
+                        border: none;
+                        border-bottom: .4px solid $siva;
+                        @include tranzicija();
+                        &:focus{
+                            border-bottom: .4px solid $plava;
+                        }
+                    }
+                    textarea{
+                        width: 41.2rem;
+                    }
+                    #subm{
+                        width: 5rem;
+                        margin: 1.2rem 0;
+                        padding: .6rem 1rem;
+                        color: $bela;
+                        cursor: pointer;
+                        background-color: $plava;
+                        @include tranzicija();
+                        border: none;
+                        outline: none;
+                        @include border-rad(.2rem);
+                        &:hover{
+                            background-color: $siva;
+                        }
+                    }
+                }
+                #contact-soc{
+                    //box-shadow:  0 0 10px $siva;
+                    padding:1rem 2rem;
+                    width: 30%;
+                    p{
+                        line-height: 1.4rem;
+                        margin: 2rem 0;
+                        font-size: 1.2rem;
+                        color: $crna;
+                        text-align: center
+                    }
+                    h2{
+                        @include naslov(1.6rem);
+                        color: $crna;
+                        text-align: center;
+                        margin-bottom: 1.8rem;
+                    }
+                    nav{
+                        ul{
+                            @include flexbox();
+                            justify-content: center;
+                            li{
+                                display: inline;
+                                margin: .3rem;
+                                &:first-child{
+                                    margin-left: 0;
+                                }
+                                a{
+                                    @include link();
+                                    font-size: 1.3rem;
+                                    @include tranzicija();
+                                    &:hover{
+                                        color: $plava;
+                                    }
+                                }  
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 footer{
-    height: 4rem;
+    height: 6rem;
     background-color: $crna;
     @include flexbox;
-    justify-content: center;
     color:$bela;
+    .wrapper{
+        @include flexbox;
+        justify-content: space-between;
+        a{
+            @include link();
+            color: $bela;
+            margin: 0 1rem;
+            @include tranzicija();
+            &:hover{
+                color: $plava;
+            }
+        }
+    }   
+}
+#scroll-arrow{
+    @include flexbox();
+    position: fixed;
+    font-size: 2rem;
+    bottom: 1%;
+    right: 1%;
+    a{
+    @include link();
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height:4rem;
+    font-size: 2rem;
+    @include tranzicija();
+    opacity: 0;
+    cursor: pointer;
+    @include border-rad(262rem);
+    background-color: $crna;
+    color:$bela;
+    @include tranzicija();
+    }
 }

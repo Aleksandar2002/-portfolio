@@ -49,8 +49,8 @@ header nav ul li a {
   text-decoration: none;
   font-size: 1.17rem;
   color: #6e6e6e;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
   position: relative;
 }
 
@@ -66,8 +66,8 @@ header nav ul li a:before {
   position: absolute;
   bottom: -.4rem;
   left: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
 }
 
 header nav ul li a:hover:before {
@@ -282,8 +282,8 @@ header nav ul li {
           box-shadow: 1px 5px 25px #3399ff;
   width: 30%;
   height: 23rem;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
 }
 
 #main .services .wrapper .service:hover, #main #projects .wrapper .service:hover {
@@ -520,8 +520,8 @@ header nav ul li {
 
 #main #projects .wrapper .p-row .project img {
   width: 320px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   border-radius: .3rem .3rem 0 0;
@@ -547,8 +547,8 @@ header nav ul li {
 
 #main #projects .wrapper a {
   border-radius: 0.3rem;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
   text-decoration: none;
@@ -569,9 +569,112 @@ header nav ul li {
   margin-top: 2rem;
 }
 
-footer {
-  height: 4rem;
-  background-color: #2e2e2e;
+#main #contact {
+  margin: 1.2rem 0 4rem 0;
+}
+
+#main #contact .glavni-naslovi {
+  margin-bottom: 4rem;
+}
+
+#main #contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#main #contact .wrapper #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 1rem;
+  -webkit-box-shadow: 0 0 5px #2e2e2e;
+          box-shadow: 0 0 5px #2e2e2e;
+  border-radius: 0.5rem;
+}
+
+#main #contact .wrapper #contact-form input, #main #contact .wrapper #contact-form textarea {
+  width: 20rem;
+  margin: .8rem .5rem;
+  padding: 0.9rem 0.9rem 0.3rem 0.9rem;
+  color: #6e6e6e;
+  outline: none;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 0.4px solid #6e6e6e;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+}
+
+#main #contact .wrapper #contact-form input:focus, #main #contact .wrapper #contact-form textarea:focus {
+  border-bottom: 0.4px solid #3399ff;
+}
+
+#main #contact .wrapper #contact-form textarea {
+  width: 41.2rem;
+}
+
+#main #contact .wrapper #contact-form #subm {
+  width: 5rem;
+  margin: 1.2rem 0;
+  padding: .6rem 1rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  background-color: #3399ff;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+#main #contact .wrapper #contact-form #subm:hover {
+  background-color: #6e6e6e;
+}
+
+#main #contact .wrapper #contact-soc {
+  padding: 1rem 2rem;
+  width: 30%;
+}
+
+#main #contact .wrapper #contact-soc p {
+  line-height: 1.4rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+#main #contact .wrapper #contact-soc h2 {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+  color: #2e2e2e;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+#main #contact .wrapper #contact-soc nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,6 +687,109 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#main #contact .wrapper #contact-soc nav ul li {
+  display: inline;
+  margin: .3rem;
+}
+
+#main #contact .wrapper #contact-soc nav ul li:first-child {
+  margin-left: 0;
+}
+
+#main #contact .wrapper #contact-soc nav ul li a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #6e6e6e;
+  font-size: 1.3rem;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+}
+
+#main #contact .wrapper #contact-soc nav ul li a:hover {
+  color: #3399ff;
+}
+
+footer {
+  height: 6rem;
+  background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f2f2f2;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-between;
+}
+
+footer .wrapper a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #6e6e6e;
+  color: #f2f2f2;
+  margin: 0 1rem;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+}
+
+footer .wrapper a:hover {
+  color: #3399ff;
+}
+
+#scroll-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  font-size: 2rem;
+  bottom: 1%;
+  right: 1%;
+}
+
+#scroll-arrow a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #6e6e6e;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 262rem;
+  background-color: #2e2e2e;
+  color: #f2f2f2;
+  transition: all  .5s ease;
 }
 /*# sourceMappingURL=style.css.map */
