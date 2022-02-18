@@ -509,3 +509,19 @@ footer{
     @include tranzicija();
     }
 }
+::-webkit-scrollbar {
+    width: 11px;
+    
+}
+::-webkit-scrollbar-track {
+    box-shadow:inset 0px 0px 4px $siva; 
+    background-color: $crna;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: $bela; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $siva; 
+}
