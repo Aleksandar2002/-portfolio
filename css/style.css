@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #logo {
+  height: 100%;
+}
+
+header #logo a {
+  height: 0;
+}
+
+header #logo img {
+  width: 5.5rem;
+  height: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #6e6e6e;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+}
+
+header nav ul li a:hover {
+  color: #3399ff;
+}
+
+header nav ul li a:before {
+  content: '';
+  width: 0;
+  height: .09rem;
+  background-color: #3399ff;
+  position: absolute;
+  bottom: -.4rem;
+  left: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header nav ul li a:hover:before {
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#main #top-image {
+  background-image: url("../img/top-image4.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 43rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #top-image #image-content {
+  position: relative;
+  margin-left: 8rem;
+  color: #f2f2f2;
+}
+
+#main #top-image #image-content h1 {
+  font-size: 2.7em;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+  color: #3399ff;
+}
+
+#main #top-image #image-content h2 {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+#main #top-image #image-content hr {
+  width: 80%;
+  background-color: #f2f2f2;
+  margin: 2rem 0;
+  border: none;
+  outline: none;
+  height: 3px;
+}
+
+#main #top-image #cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 60, 60, 0);
+  top: 0;
+  left: 0;
+}
+
+#main .glavni-naslovi {
+  font-size: 2.2rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+  text-align: center;
+  font-size: 2.22rem;
+  color: #3399ff;
+  margin: 2rem 0 6rem 0;
+  color: #2e2e2e;
+}
+
+#main #about {
+  margin-bottom: 50px;
+}
+
+#main #about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#main #about .wrapper img {
+  height: 24rem;
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  border-radius: 1rem;
+}
+
+#main #about .wrapper #biography {
+  width: 26rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #about .wrapper #biography p {
+  margin-top: 2rem;
+}
+
+#main #about .wrapper #biography a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #6e6e6e;
+  border-radius: 0.2rem;
+  color: #f2f2f2;
+  padding: .5rem 1rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  margin: 5rem;
+  background-color: #3399ff;
+}
+
+#main #about .wrapper #biography a:hover {
+  background-color: #6e6e6e;
+}
+
+#main #about .wrapper h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+  margin-bottom: 1.2rem;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+#main #about .wrapper h3 {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0;
+  text-align: left;
+  margin-bottom: .2rem;
+  color: #3399ff;
+}
+
+#main #about .wrapper p {
+  font-size: 1rem;
+  color: #2e2e2e;
+  text-align: justify;
+  line-height: 1.3rem;
+}
+
+#main #services {
+  background-color: #2e2e2e;
+  padding: 1.5rem 0 9rem 0;
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+  color: #f2f2f2;
+}
+
+#main #services h1 {
+  color: #f2f2f2;
+  margin-top: 1rem;
+}
+
+#main #services .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #services .wrapper .service {
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -webkit-box-shadow: 1px 5px 25px #3399ff;
+          box-shadow: 1px 5px 25px #3399ff;
+  width: 30%;
+  height: 23rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#main #services .wrapper .service:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 27px #f2f2f2;
+          box-shadow: 1px 1px 27px #f2f2f2;
+}
+
+#main #services .wrapper .service img {
+  margin: 2rem;
+  width: 30%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#main #services .wrapper .service #db {
+  width: 22%;
+}
+
+#main #services .wrapper .service p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#main #skills {
+  margin-bottom: 3rem;
+}
+
+#main #skills .wrapper {
+  margin-top: -20px;
+  /* display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100%;
+                flex-direction: column;*/
+}
+
+#main #skills .wrapper #skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.2rem;
+}
+
+#main #skills .wrapper #skill .range, #main #skills .wrapper #skill .range .in-range {
+  -webkit-box-shadow: 0.5px 0.5px 5px #2e2e2e;
+          box-shadow: 0.5px 0.5px 5px #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  position: relative;
+  height: 2rem;
+  background-color: #3399ff;
+  border-radius: 1rem;
+}
+
+#main #skills .wrapper #skill .range .in-range {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 93%;
+  background-color: #6e6e6e;
+  border-radius: 1rem 0 0 1rem;
+}
+
+#main #skills .wrapper #skill .range p, #main #skills .wrapper #skill .range .in-range p {
+  margin: 0 .5rem  0 .5rem;
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+
+#main #skills .wrapper #skill:nth-child(2) .range .in-range {
+  width: 86%;
+}
+
+#main #skills .wrapper #skill:nth-child(3) .range .in-range {
+  width: 65%;
+}
+
+#main #skills .wrapper #skill:nth-child(4) .range .in-range {
+  width: 50%;
+}
+
+#main #skills .wrapper #skill:nth-child(5) .range .in-range {
+  width: 75%;
+}
+
+#main #skills .wrapper #skill:nth-child(6) .range .in-range {
+  width: 65%;
+}
+
+#main #skills .wrapper #skill:nth-child(7) .range .in-range {
+  width: 25%;
+}
+
+footer {
+  height: 4rem;
+  background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */

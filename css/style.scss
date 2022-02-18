@@ -1,0 +1,300 @@
+$crna:#2e2e2e;
+$siva:#6e6e6e;
+$crvena:#ff3333;
+$plava:#3399ff;
+$bela:#f2f2f2;
+
+@mixin link{
+    text-decoration: none;
+    font-size: 1.17rem;
+    color: $siva;
+}
+@mixin element-liste{
+    display: inline;
+    margin: 0 10px;
+}
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin tranzicija {
+    transition: .5s ease;
+}
+@mixin background($url1) {
+            background-image: url($url1);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+@mixin naslov ($velicina-fonta) {
+    font-size: $velicina-fonta;
+    letter-spacing: 1.2px;
+    margin: 10px 0;
+    text-align: left;
+}
+@mixin naslov-main {
+    text-align: center;
+    font-size: 2.22rem;
+    color: $plava;
+    margin: 2rem 0 6rem 0;
+}
+@mixin horizontala($boja) {
+    width: 80%;
+    background-color: $boja;
+    margin: 2rem 0;
+    border: none;
+    outline: none;
+    height: 3px;
+}
+@mixin border-rad($jedinica) {
+    border-radius: $jedinica;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-color: $bela;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+header{
+    .wrapper{
+        @include flexbox;
+    }
+    #logo{
+        height: 100%;
+        a{  
+            height: 0;
+        }
+        img{
+            width: 5.5rem;
+            height: 100%;
+        }
+    }
+    nav ul li a{
+        @include link;
+        @include tranzicija;
+        position: relative;
+        &:hover{
+            color: $plava;
+        }
+        &:before{
+            content: '';
+            width: 0;
+            height: .09rem;
+            background-color: $plava;
+            position: absolute;
+            bottom: -.4rem;
+            left: 0;
+            @include tranzicija;
+        }
+            &:hover:before{
+                width: 100%;                
+            }
+        }
+    nav ul li{
+        @include element-liste;
+    }
+}
+#main{
+    #top-image{
+        @include background("../img/top-image4.jpg");
+        position: relative;
+        height: 43rem;
+        @include flexbox;
+        #image-content{
+            position: relative;
+            margin-left:8rem ;
+            color: $bela;
+            h1{
+                @include naslov(2.7em);
+                color: $plava;
+            }
+            h2{
+                @include naslov(1.6rem);
+            }
+            hr{
+                @include horizontala($bela);
+            }
+        }
+        #cover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(60, 60, 60 , 0);
+            top: 0;
+            left: 0;
+        }
+    }
+    .glavni-naslovi{
+        @include naslov(2.2rem);
+        @include naslov-main();
+        color: $crna;
+        }
+    #about{
+        margin-bottom: 50px;
+        .wrapper{
+            @include flexbox();
+            align-items: flex-start;
+            img{
+                height:24rem;
+                filter: grayscale(.7);
+                @include border-rad(1rem);
+            }
+            #biography{
+                width: 26rem;
+                display: flex;
+                justify-content:flex-start;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    margin-top: 2rem;
+                }
+                a{
+                    @include link();
+                    @include border-rad(.2rem);
+                    color: $bela;
+                    padding: .5rem 1rem;
+                    transition: all .3s ease-in-out;
+                    margin: 5rem;
+                    background-color: $plava;
+                    &:hover{
+                        background-color: $siva;
+                    }
+                }
+            }
+            h2 {
+                @include naslov(1.5rem);
+                margin-bottom: 1.2rem;
+                color: $crna;
+                text-align: center
+            }
+            h3{
+                @include naslov(1.2rem);
+                margin-bottom: .2rem;
+                color: $plava;
+            }
+            p{
+                font-size: 1rem;
+                color: $crna;
+                text-align: justify ;
+                line-height: 1.3rem;
+            }
+        }
+    }
+    #services{
+        background-color: $crna;
+        padding: 1.5rem 0 9rem 0;
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+        color: $bela;
+        h1{
+            color: $bela;
+            margin-top: 1rem;
+        }
+        .wrapper{
+            @include flexbox();
+            .service{
+                @include border-rad(.4rem);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2rem;
+                box-shadow:1px 5px 25px $plava;
+                width: 30%;
+                height: 23rem;
+                @include tranzicija();
+                &:hover{
+                    transform:scale(1.1);
+                    box-shadow: 1px 1px 27px $bela;
+                }
+                img{
+                    margin: 2rem;
+                    width: 30%;
+                    filter: grayscale(1);
+                    }
+                    #db{
+                        width: 22%;
+                    }
+                    p{
+                        margin: 20px 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        #skills{
+            margin-bottom:3rem;
+            .wrapper{
+                margin-top: -20px;
+                /* display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100%;
+                flex-direction: column;*/
+                #skill{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1.2rem;
+                    .range{
+                        box-shadow: .5px .5px 5px $crna;
+                        @include flexbox();
+                        width: 70%;
+                        position: relative;
+                        height:2rem;    
+                        background-color: $plava;
+                        @include border-rad(1rem);
+                        .in-range{
+                            @extend .range;
+                            box-shadow: none;
+                            width: 93%;
+                            background-color: $siva;
+                            border-radius: 1rem 0 0 1rem;
+                        }
+                        p{
+                            margin:0 .5rem  0 .5rem;
+                            color: $bela;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                #skill:nth-child(2) .range .in-range{
+                    width: 86%;
+                }
+                #skill:nth-child(3) .range .in-range{
+                    width: 65%;
+                }
+                #skill:nth-child(4) .range .in-range{
+                    width: 50%;
+                }
+                #skill:nth-child(5) .range .in-range{
+                    width: 75%;
+                }
+                #skill:nth-child(6) .range .in-range{
+                    width: 65%;
+                }
+                #skill:nth-child(7) .range .in-range{
+                    width: 25%;
+                }
+            }
+        }
+}
+
+footer{
+    height: 4rem;
+    background-color: $crna;
+    @include flexbox;
+    justify-content: center;
+    color:$bela;
+}
