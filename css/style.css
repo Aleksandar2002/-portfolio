@@ -388,7 +388,7 @@ header nav ul li {
   width: 65%;
 }
 
-#main #skills .wrapper #skill:nth-child(7) .range .in-range {
+#main #skills .wrapper #skill:nth-child(7) .range .in-range, #main #skills .wrapper #skill:nth-child(8) .range .in-range {
   width: 25%;
 }
 
