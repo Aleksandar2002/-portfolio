@@ -17,6 +17,7 @@ $bela:#f2f2f2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 @mixin flex-col {
     display: flex;
@@ -86,6 +87,19 @@ header{
             width: 5.5rem;
             height: 100%;
         }
+    }
+    #menu{
+        @include link();
+        @include tranzicija;
+        font-size: 1.5rem;
+        display: none;
+        &:hover{
+            color: $plava;
+        }
+    }
+    .toggler{
+        opacity: 0;
+        display: none;
     }
     nav ul li a{
         @include link;
@@ -212,7 +226,7 @@ header{
                 padding: 2rem;
                 box-shadow:1px 5px 25px $plava;
                 width: 30%;
-                height: 23rem;
+                height: 27rem;
                 @include tranzicija();
                 &:hover{
                     transform:scale(1.1);
@@ -220,15 +234,18 @@ header{
                 }
                 img{
                     margin: 2rem;
+                    min-width: 55px;
                     width: 30%;
                     filter: grayscale(1);
                     }
                     #db{
                         width: 22%;
+                        min-width: 40px;
                     }
                     p{
                         margin: 20px 0;
                         text-align: center;
+                        line-height: 1.6rem;
                     }
                 }
             }
@@ -242,7 +259,7 @@ header{
                 align-items: center;
                 height: 100%;
                 flex-direction: column;*/
-                #skill{
+                .skill{
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -269,29 +286,29 @@ header{
                         }
                     }
                 }
-                #skill:nth-child(2) .range .in-range{
+                .skill:nth-child(2) .range .in-range{
                     width: 86%;
                 }
-                #skill:nth-child(3) .range .in-range{
+                .skill:nth-child(3) .range .in-range{
                     width: 65%;
                 }
-                #skill:nth-child(4) .range .in-range{
+                .skill:nth-child(4) .range .in-range{
                     width: 50%;
                 }
-                #skill:nth-child(5) .range .in-range{
+                .skill:nth-child(5) .range .in-range{
                     width: 75%;
                 }
-                #skill:nth-child(6) .range .in-range{
+                .skill:nth-child(6) .range .in-range{
                     width: 65%;
                 }
-                #skill:nth-child(7) .range .in-range, #skill:nth-child(8) .range .in-range{
+                .skill:nth-child(7) .range .in-range, .skill:nth-child(8) .range .in-range{
                     width: 25%;
                 }
             }
         }
         #projects{
             @extend .services;
-            padding-bottom:  5.6rem ;
+            padding-bottom:  6.3rem ;
             .glavni-naslovi{
                 margin-bottom: 3rem;
             }
@@ -315,6 +332,10 @@ header{
                             text-align: center;
                             line-height: 1.45rem;
                         }
+                        a{
+                            position: relative;
+                            opacity: 1;
+                        }
                     }
                     .project{
                         @include flex-col();
@@ -322,6 +343,12 @@ header{
                         padding-bottom: 20px;
                         @include border-rad(.3rem);
                         position: relative;
+                        &:nth-child(2){
+                            box-shadow: none;
+                        }
+                        &:nth-child(4), &:nth-child(5) ,&:nth-child(6){
+                            margin-top: 6rem;
+                        }
                         h4{
                             @include naslov(1.4rem);
                             margin: .84rem;
@@ -397,6 +424,7 @@ header{
                         padding: 0.9rem 0.9rem 0.3rem 0.9rem;
                         color: $siva;
                         outline: none;
+                        font-size: 1rem;
                         background-color: $bela;
                         border: none;
                         border-bottom: .4px solid $siva;
@@ -409,6 +437,7 @@ header{
                         width: 41.2rem;
                     }
                     #subm{
+                        display: block;
                         width: 5rem;
                         margin: 1.2rem 0;
                         padding: .6rem 1rem;

@@ -27,16 +27,20 @@
                 <div id="logo">
                     <a href="#home"><img src="img/logo.png" alt=""></a>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div id="hide">
+                    <input type="checkbox" class="toggler"/>
+                    <a  id="menu" href=""><i class="fas fa-bars"></i></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About me</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <div id="main">
@@ -99,7 +103,7 @@
             <div id="skills">
                 <h1 class="glavni-naslovi">Skills</h1>
                 <div class="wrapper">
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>HTML</p>
@@ -108,7 +112,7 @@
                             
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>CSS</p>
@@ -116,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>JavaScript</p>
@@ -124,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>PHP</p>
@@ -132,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>My SQL</p>
@@ -140,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>C</p>
@@ -148,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>C#</p>
@@ -156,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="skill">
+                    <div class="skill">
                         <div class="range">
                             <div class="in-range">
                                 <p>Java</p>
@@ -173,15 +177,22 @@
                         <div class="project">
                             <h4>Magazine</h4>
                             <div class="p-img">
-                                <img src="img/p8.jpg" alt="Project one"/>
+                                <img src="img/p8.jpg" alt="Project one Magazine"/>
                                 <a href="#">View project</a>
                             </div>
                             <p>HTML , CSS</p>
                         </div>
                         <div class="project">
+                            <div id="about-proj">
+                                <h4>About projects</h4>
+                                <p>All projects are written using frontend languages ​​with minimal use of backend. The projects have been completed in the past few years. </p>
+                                <a href="#">See all projects</a>
+                            </div>
+                        </div>
+                        <div class="project">
                             <h4>Blue Tech</h4>
                             <div class="p-img">
-                                <img src="img/p6.jpg" alt="Project one"/>
+                                <img src="img/p6.jpg" alt="Project two Blue Tech"/>
                                 <a class="view-p" href="#">View project</a>
                             </div>
                             <p>HTML , CSS , JavaScript, Angular</p>
@@ -189,30 +200,23 @@
                         <div class="project">
                             <h4>Corporate</h4>
                             <div class="p-img">
-                                <img src="img/p7.jpg" alt="Project one"/>
+                                <img src="img/p7.jpg" alt="Project three Corporate"/>
                                 <a href="#">View project</a>
                             </div>
                             <p>HTML , CSS , PHP </p>
                         </div>
-                    </div>
-                    <div class="p-row two">
                         <div class="project">
                             <h4>Connection</h4>
                             <div class="p-img">
-                                <img src="img/p10.jpg" alt="Project one"/>
+                                <img src="img/p10.jpg" alt="Project four Connection"/>
                                 <a href="#">View project</a>
                             </div>
                             <p>HTML , SASS , JavaScript</p>
                         </div>
-                        <div id="about-proj">
-                            <h4>About projects</h4>
-                            <p>All projects are written using frontend languages ​​with minimal use of backend. The projects have been completed in the past few years. </p>
-                            <a href="">See all projects</a>
-                        </div>
                         <div class="project">
                             <h4>Verti</h4>
                             <div class="p-img">
-                                <img src="img/p5.jpg" alt="Project one"/>
+                                <img src="img/p5.jpg" alt="Project five Verti"/>
                                 <a href="#">View project</a>
                             </div>
                             <p>HTML , LESS</p>

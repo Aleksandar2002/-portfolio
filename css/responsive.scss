@@ -1,0 +1,492 @@
+@import "style.scss";
+@media  screen and (max-width: 1355px) {
+    html{
+        font-size: .91rem;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    #main{
+        #top-image{
+            #image-content{
+                h1{
+                    font-size: 2rem;
+                }
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .glavni-naslovi{
+            font-size: 2rem;
+        }
+        #about{
+            .wrapper{
+                img{
+                    height: 22rem;
+                }
+                h2{
+                    font-size: 1.4rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                }
+                h3{
+                    font-size: 1.1rem;
+                }
+                #biography{
+                    a{
+                        padding: .3 .9rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .services{
+            .service{
+                height: 23rem;
+                p{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                img{
+                    margin-bottom: 1rem;
+                }
+            }
+            
+        }
+        #skills{
+            margin-bottom: 6rem;
+            .wrapper{
+                .skill{
+                .range{ 
+                    width: 50%;
+                    .in-range{
+                        width:93%;
+                    }
+                    p{
+                        font-size: .95rem;
+                    }
+                }
+            }
+            }
+        }
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+
+                        h4{
+                            font-size: 1.2rem;
+                        }
+                        .p-img{
+                        img{
+                            width: 240px;
+                        }
+                        a{
+                            font-size: 1rem;    
+                        }
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                    #about-proj{
+                        p{
+                            line-height: 1.5rem;
+                            font-size: .95rem;
+                        }
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        #contact{
+            .wrapper{
+                #contact-form{
+                    padding: 2rem .8rem;
+                    input, textarea{
+                        width: 18rem;
+                        font-size: 1rem;
+                    }
+                    textarea{
+                        width: 37rem;
+                    }
+                    #subm{
+                        width: 4.5rem;
+                        font-size: 1rem;
+                    }
+                }
+                #contact-soc{
+                    h2{
+                        font-size: 1.4em;
+                    }
+                    p{
+                        line-height: 1.5rem;
+                        font-size: 1rem;
+                    }
+                    nav{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1.2rem;
+                                }  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .wrapper{
+            width: 80%;
+            a{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    #scroll-arrow{
+        right: 0;
+        a{
+            font-size: 1.3rem;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
+
+@media  screen and (max-width: 1025px) {
+    html{
+        font-size: .9rem;
+    }
+    header{
+        .wrapper{
+            #logo{
+                img{
+                    width: 5rem;
+                }
+            }
+        }
+    }
+    #main{
+        #top-image{
+            height:40rem;
+        }
+        .glavni-naslovi{
+            font-size: 2.1rem;
+        }
+        #about{
+            margin-bottom: 7rem;
+            .wrapper{
+                img{
+                    margin-left: 7rem;
+                }
+                h2{
+                    font-size: 1.5rem;
+                }
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                }
+                #pers-details{
+                    margin-left: 50%;
+                    transform: translate(-160px,20px);
+                }
+            }
+        }
+        .services{
+            padding-bottom: 6rem;
+            .wrapper{
+                @include flex-col();
+                .service{
+                    width: 55%;
+                    height: 23rem;
+                    //min-width: 70%;
+                    margin-bottom:4rem ;
+                    p{
+                        font-size: 1.12rem;
+                        line-height: 1.9rem ;
+                    }
+                    h2{
+                        font-size:1.7rem;
+                    }
+                    img{
+                        margin-bottom: 1rem;
+                        width: 20%;
+                    }
+                    #db{
+                        width: 14%;
+                    }
+                }
+            }
+            
+        }
+        #skills{
+            margin-bottom: 8rem;
+        }
+        #projects{
+            .wrapper{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media  screen and (max-width: 921px){
+    #main{
+        #skills{
+            .wrapper{
+                .skill{
+                    .range{
+                        width: 80%;
+                        .in-range{
+                            width: 93%;
+                            p{
+                                font-size: 1.12rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #projects{
+            padding-bottom: 0;
+            .wrapper{
+                width: 80%;
+                .p-row{
+                    #about-proj{
+                        width: 240px;
+                    }
+                    .project{
+                        &:nth-child(4), &:nth-child(5) ,&:nth-child(6){
+                            margin-top: 0rem;
+                        }
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+        }
+        #contact{
+            .wrapper{
+                @include flex-col();
+            #contact-form{
+
+                input, textarea{
+                    font-size: 1.1rem;
+                }
+                input{
+                    width: 22rem;
+                }
+                textarea{
+                    width: 45rem;
+                }
+            }
+            #contact-soc{
+                width: 50%;
+                h2{
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: 1.12rem;
+                }
+                nav{
+                    ul{
+                        li{
+                            a{
+                                font-size: 1.5rem;
+                            }  
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 770px){
+    #main{
+        #contact{
+            .wrapper{
+                @include flex-col();
+            #contact-form{
+                width: 77%;
+                display: block;
+                textarea , input{
+                    width: 90%;
+                    margin-left: 5%;
+                }
+                #subm{
+                    margin-left: 42%;
+                }
+            }
+            #contact-soc{
+                width: 50%;
+                h2{
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: 1.12rem;
+                }
+                nav{
+                    ul{
+                        li{
+                            a{
+                                font-size: 1.5rem;
+                            }  
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+@media screen and (max-width:690px) {
+    html{
+        font-size: .8rem;
+    }
+    header{
+        nav ul li a{
+            font-size: 1.1rem;
+            }
+    }
+    #main{
+        #top-image{
+            #image-content{
+                h1{
+                    font-size: 2rem;
+                }
+                h2{
+                    font-size: 1.3rem;
+                }
+                hr{
+                    height: .3rem;
+                }
+            }
+        }
+
+        #about{
+            .wrapper{
+                @include flex-col();
+                #biography{
+                    margin-top: 2rem;
+                }
+                #pers-details{
+                    margin-left: 0;
+                    transform: none;
+                }
+                img{
+                    margin-left: 0;
+                }
+            }
+        }
+        .services{
+            .wrapper{
+                .service{
+                    min-width: 70%;
+                    p{
+                        font-size: 1rem;
+
+                    }
+                    h2{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        #projects{
+            .wrapper{
+                .p-row{
+                    @include flex-col();
+                    .project{
+                        margin-bottom:3rem;
+                        .p-img{
+                            img{
+                            width: 23   0px;
+                        }
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:540px) {
+    header{
+        margin-bottom: .2rem;
+        .wrapper{
+            display: block;
+        }
+        #logo{
+            margin-left: 42.2%;
+        }
+        #menu{
+            display: block;
+            font-size: 1.8rem
+        }
+        nav{    
+            width: 100%;
+            display: none;
+        }
+        #hide{
+            position: relative;
+            @include flex-col;
+            
+            .toggler{
+                position: absolute;
+                margin-top: 7px;
+                display: block;
+                opacity:0;
+                &:checked ~ nav{
+                    display: block;
+                }
+            }
+        }
+        nav ul li a{
+                color: $bela;
+                &:before{
+                    width: 0;
+                    height: 0rem;
+                    @include tranzicija;
+                }
+                    &:hover:before{
+                        width: 220px;                
+                    }
+                }
+        nav ul li{
+            background-color: $siva;
+            @include flexbox();
+            justify-content: center;
+            border-bottom: 1px solid $bela;
+        }
+    }
+    #main{
+        #skills{
+            .wrapper{
+                width: 100%;
+                .skill{
+                    margin: 2rem 0;
+                    .range{
+                        width: 92%;
+                        .in-range{
+                            p{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
