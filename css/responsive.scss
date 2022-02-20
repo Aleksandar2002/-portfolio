@@ -688,3 +688,57 @@
         }   
     }
 }
+@media screen and (min-width:1680px){
+    html{
+        font-size: 1.2rem;
+    }
+    #main{
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+                        &:nth-child(4){
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:2100px){
+    html{
+        font-size: 1.4rem;
+    }
+    #main{
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+                        &:nth-child(5){
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:2600px){
+    html{
+        font-size: 1.4rem;
+    }
+    #main{
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+                        &:nth-child(6){
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
