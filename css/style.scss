@@ -519,7 +519,7 @@ footer{
     @include flexbox();
     position: fixed;
     font-size: 2rem;
-    bottom: 1%;
+    bottom: 2%;
     right: 1%;
     a{
     @include link();

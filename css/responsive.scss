@@ -76,38 +76,7 @@
             }
             }
         }
-        #projects{
-            .wrapper{
-                .p-row{
-                    .project{
-
-                        h4{
-                            font-size: 1.2rem;
-                        }
-                        .p-img{
-                        img{
-                            width: 240px;
-                        }
-                        a{
-                            font-size: 1rem;    
-                        }
-                        }
-                        p{
-                            font-size: 1rem;
-                        }
-                    }
-                    #about-proj{
-                        p{
-                            line-height: 1.5rem;
-                            font-size: .95rem;
-                        }
-                        a{
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
+        
         #contact{
             .wrapper{
                 #contact-form{
@@ -162,7 +131,41 @@
         }
     }
 }
-
+@media screen and (max-width: 1100px) { 
+    #main{
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+                        h4{
+                            font-size: 1.2rem;
+                        }
+                        .p-img{
+                        img{
+                            width: 240px;
+                        }
+                        a{
+                            font-size: 1rem;    
+                        }
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                    #about-proj{
+                        p{
+                            line-height: 1.5rem;
+                            font-size: .95rem;
+                        }
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media  screen and (max-width: 1025px) {
     html{
         font-size: .9rem;
@@ -263,7 +266,7 @@
         #projects{
             padding-bottom: 0;
             .wrapper{
-                width: 80%;
+                width: 90%;
                 .p-row{
                     #about-proj{
                         width: 240px;
@@ -316,6 +319,9 @@
 }
 @media  screen and (max-width: 770px){
     #main{
+        #top-image{
+            background-position: center;
+        }
         #contact{
             .wrapper{
                 @include flex-col();
@@ -427,9 +433,17 @@
         margin-bottom: .2rem;
         .wrapper{
             display: block;
+            width: 100%;
         }
         #logo{
-            margin-left: 42.2%;
+            //margin-left: 42.2%;
+            @include flexbox();
+            justify-content: center;
+            width: 100vw;
+            margin-left: 0;
+            a{
+                height: 100%;
+            }
         }
         #menu{
             display: block;
@@ -448,6 +462,8 @@
                 margin-top: 7px;
                 display: block;
                 opacity:0;
+                width: 23px;
+                height: 25px;
                 &:checked ~ nav{
                     display: block;
                 }
@@ -488,5 +504,187 @@
                 }
             }
         }
+        #contact{
+            .wrapper{
+                #contact-form{
+                    width: 83%;
+                    input, textarea{
+                        font-size: .9rem;
+                    }
+                }
+                #contact-soc{
+                    width: 100%;
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    nav{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1.22rem;
+                                }  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .wrapper{
+            a{
+                font-size: 1.02rem;
+            }
+        }   
+    }
+}
+@media screen and(max-width: 430px) {
+    html{
+        font-size: .77rem;
+    }
+    #main{
+        #top-image{
+            #image-content{
+                h1{
+                    font-size: 1.86rem;
+                }
+                h2{
+                    font-size: 1.3rem;
+                }
+                hr{
+                    height: 1.2px;
+                }
+            }
+        }
+        .glavni-naslovi{
+            font-size: 1.8rem;
+        }
+        #about{
+            .glavni-naslovi{
+                margin-bottom: 4rem;
+            }
+            margin-bottom: 6rem;
+            .wrapper{
+                img{
+                    height: 17rem;
+                }
+                #biography{
+                    p{
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+                    a{
+                        margin: 20px auto ;
+                    }
+                }
+                #pers-details{
+                    width: 80%;
+                    h2{
+                        font-size: 1.3rem;
+                    }
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .services{
+            .wrapper{
+                .service{
+                    width: 90%;
+                    h2{
+                        font-size: 1.3rem;
+                    }
+                    p{
+                        font-size: .97rem;
+                        line-height: 1.7rem;
+                    }
+                    img{
+                        width: 15%;
+                    }
+                    #db{
+                        width: 9%;
+                    }
+                }
+            }
+        }
+        #skills{
+            .wrapper{
+                .skill{
+                    .range{
+                        .in-range{
+                            p{
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #projects{
+            .wrapper{
+                .p-row{
+                    .project{
+                        .p-img{
+                            img{
+                                width:200px;
+                            }
+                        }
+                        #about-proj{
+                            h4{
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                font-size: .96rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 345px){
+    html{
+        font-size: .73rem;
+    }
+    #main{
+        #about{
+            .wrapper{
+                #biography{
+                    width: 80%;
+                    p{
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+            }
+        }
+        }
+        #skills{
+            .wrapper{
+                width: 93%;
+            }
+        }
+        #contact{
+            .wrapper{
+                #contact-form{
+                    width: 93%;
+                }
+            }
+        }
+        
+    }
+    footer{
+        .wrapper{
+            p{
+                font-size: .84rem;
+            }
+            a{
+                font-size: .94rem;
+            }
+        }   
     }
 }
