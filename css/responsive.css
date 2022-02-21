@@ -1491,7 +1491,7 @@ footer .wrapper a:hover {
   }
 }
 
-@media screen and (min-width: 1690px) {
+@media screen and (min-width: 1681px) {
   html {
     font-size: 1.2rem;
   }
@@ -1509,7 +1509,7 @@ footer .wrapper a:hover {
   }
 }
 
-@media screen and (min-width: 2600px) {
+@media screen and (min-width: 2560px) {
   html {
     font-size: 1.4rem;
   }
