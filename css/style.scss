@@ -1,6 +1,6 @@
 $crna:#2e2e2e;
 $siva:#6e6e6e;
-$crvena:#ff3333;
+//$crvena:#ff3333;
 $plava:#3399ff;
 $bela:#f2f2f2;
 
@@ -29,11 +29,11 @@ $bela:#f2f2f2;
     transition: all  .5s ease;
 }
 @mixin background($url1) {
-            background-image: url($url1);
-            background-position: right;
-            background-repeat: no-repeat;
-            background-size: cover;
-            //@at-root: fixed;
+    background-image: url($url1);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //@at-root: fixed;
 }
 @mixin naslov ($velicina-fonta) {
     font-size: $velicina-fonta;
@@ -77,54 +77,58 @@ body{
 header{
     .wrapper{
         @include flexbox;
-    }
-    #logo{
-        margin-left: -1.7rem  ;
-        height: 100%;
-        a{  
-            height: 0;
-        }
-        img{
-            width: 5.5rem;
+        #logo{
+            margin-left: -1.7rem  ;
             height: 100%;
-        }
-    }
-    #menu{
-        @include link();
-        @include tranzicija;
-        font-size: 1.5rem;
-        display: none;
-        &:hover{
-            color: $plava;
-        }
-    }
-    .toggler{
-        opacity: 0;
-        display: none;
-    }
-    nav ul li a{
-        @include link;
-        @include tranzicija;
-        position: relative;
-        &:hover{
-            color: $plava;
-        }
-        &:before{
-            content: '';
-            width: 0;
-            height: .09rem;
-            background-color: $plava;
-            position: absolute;
-            bottom: -.4rem;
-            left: 0;
-            @include tranzicija;
-        }
-            &:hover:before{
-                width: 100%;                
+            a{  
+                height: 0;
+            }
+            img{
+                width: 5.5rem;
+                height: 100%;
             }
         }
-    nav ul li{
-        @include element-liste;
+        #menu{
+            @include link();
+            @include tranzicija;
+            font-size: 1.5rem;
+            display: none;
+            &:hover{
+                color: $plava;
+            }
+        }
+        .toggler{
+            opacity: 0;
+            display: none;
+        }
+        nav{
+            ul{
+                li{
+                    @include element-liste;
+                    a{
+                        @include link;
+                        @include tranzicija;
+                        position: relative;
+                        &:hover{
+                            color: $plava;
+                        }
+                        &:before{
+                            content: '';
+                            width: 0;
+                            height: .09rem;
+                            background-color: $plava;
+                            position: absolute;
+                            bottom: -.4rem;
+                            left: 0;
+                            @include tranzicija;
+                        }
+                            &:hover:before{
+                                width: 100%;                
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 #main{

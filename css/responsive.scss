@@ -434,7 +434,6 @@
         .wrapper{
             display: block;
             width: 100%;
-        }
         #logo{
             //margin-left: 42.2%;
             @include flexbox();
@@ -445,15 +444,11 @@
                 height: 100%;
             }
         }
-        #menu{
-            display: block;
-            font-size: 1.8rem
-        }
-        nav{    
-            width: 100%;
-            display: none;
-        }
         #hide{
+            #menu{
+                display: block;
+                font-size: 1.8rem
+            }
             position: relative;
             @include flex-col;
             
@@ -473,28 +468,35 @@
                     z-index: 1;
                 }
             }
-        }
-        nav ul li a{
-                background-color: $crna;
-                width: 100%;
-                color: $bela;
-                &:before{
-                    width: 0;
-                    height: 0rem;
-                    @include tranzicija;
-                }
-                &:hover{
-                    background-color:  $bela;
-                    color: $crna;
-                }
-                }
-        nav ul li{
+        nav{
             width: 100%;
-            text-align: center;
-            margin: 0;
-            @include flexbox();
-            justify-content: center;
+            display: none;
+            ul{
+                li{
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    @include flexbox();
+                    justify-content: center;
+                    a{
+                        background-color: $crna;
+                        width: 100%;
+                        color: $bela;
+                        &:before{
+                            width: 0;
+                            height: 0rem;
+                            @include tranzicija;
+                        }
+                        &:hover{
+                            background-color:  $bela;
+                            color: $crna;
+                        }
+                        }
+                    }
+                }
+            }
         }
+    }
     }
     #main{
         #skills{
