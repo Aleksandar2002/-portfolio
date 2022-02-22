@@ -856,7 +856,8 @@ footer .wrapper a:hover {
 }
 
 #scroll-arrow a:hover {
-  color: #3399ff;
+  color: #2e2e2e;
+  background-color: #f2f2f2;
 }
 
 ::-webkit-scrollbar {

@@ -430,7 +430,7 @@
 }
 @media screen and (max-width:540px) {
     header{
-        margin-bottom: .2rem;
+        margin-bottom: 0rem;
         .wrapper{
             display: block;
             width: 100%;
@@ -459,6 +459,7 @@
             
             .toggler{
                 position: absolute;
+                z-index: 3;
                 margin-top: 7px;
                 display: block;
                 opacity:0;
@@ -467,24 +468,32 @@
                 &:checked ~ nav{
                     display: block;
                 }
+                &:checked ~ #menu{
+                    transform: rotate(90deg);
+                    z-index: 1;
+                }
             }
         }
         nav ul li a{
+                background-color: $crna;
+                width: 100%;
                 color: $bela;
                 &:before{
                     width: 0;
                     height: 0rem;
                     @include tranzicija;
                 }
-                    &:hover:before{
-                        width: 220px;                
-                    }
+                &:hover{
+                    background-color:  $bela;
+                    color: $crna;
+                }
                 }
         nav ul li{
-            background-color: $siva;
+            width: 100%;
+            text-align: center;
+            margin: 0;
             @include flexbox();
             justify-content: center;
-            border-bottom: 1px solid $bela;
         }
     }
     #main{

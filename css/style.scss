@@ -539,7 +539,8 @@ footer{
     @include tranzicija();
     transition-duration:.3s ;
     &:hover{
-        color: $plava;  
+        color: $crna;
+        background-color: $bela;  
     }
     }
 }
