@@ -105,6 +105,7 @@ header{
             display: none;
         }
         nav{
+            @include tranzicija();
             ul{
                 li{
                     @include element-liste;

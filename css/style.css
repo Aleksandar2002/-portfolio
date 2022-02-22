@@ -70,6 +70,11 @@ header .wrapper .toggler {
   display: none;
 }
 
+header .wrapper nav {
+  -webkit-transition: all  .5s ease;
+  transition: all  .5s ease;
+}
+
 header .wrapper nav ul li {
   display: inline;
   margin: 0 10px;
