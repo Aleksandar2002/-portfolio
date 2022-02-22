@@ -63,6 +63,9 @@ $bela:#f2f2f2;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 ul{
     list-style-type: none;
 }
