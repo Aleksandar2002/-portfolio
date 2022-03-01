@@ -1484,6 +1484,13 @@ footer .wrapper a:hover {
   #main #projects .wrapper .p-row .project #about-proj p {
     font-size: .96rem;
   }
+  footer .wrapper p {
+    font-size: .9rem;
+  }
+  footer .wrapper a {
+    font-size: 1rem;
+    margin: 4px;
+  }
 }
 
 @media screen and (max-width: 345px) {
