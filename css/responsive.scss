@@ -461,7 +461,9 @@
                 width: 23px;
                 height: 25px;
                 &:checked ~ nav{
-                    display: block;
+                    opacity: 1;
+                    margin-top: 0;
+                    visibility:visible;
                 }
                 &:checked ~ #menu{
                     transform: rotate(90deg);
@@ -469,8 +471,11 @@
                 }
             }
         nav{
+            margin-top: -100px;
             width: 100%;
-            display: none;
+            transition: margin .4s ease, opacity .4s ease;
+            opacity: 0;
+            visibility: hidden;
             ul{
                 li{
                     width: 100%;

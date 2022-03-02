@@ -1335,7 +1335,9 @@ footer .wrapper a:hover {
     height: 25px;
   }
   header .wrapper #hide .toggler:checked ~ nav {
-    display: block;
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
   }
   header .wrapper #hide .toggler:checked ~ #menu {
     -webkit-transform: rotate(90deg);
@@ -1343,8 +1345,12 @@ footer .wrapper a:hover {
     z-index: 1;
   }
   header .wrapper #hide nav {
+    margin-top: -100px;
     width: 100%;
-    display: none;
+    -webkit-transition: margin .4s ease, opacity .4s ease;
+    transition: margin .4s ease, opacity .4s ease;
+    opacity: 0;
+    visibility: hidden;
   }
   header .wrapper #hide nav ul li {
     width: 100%;
